@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.scripts.js"></script>
         <!--[if lt IE 9]>
              <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -13,13 +15,13 @@
     <section class="main-content">
        <header>
             <h1 class = "main-title"> Portfolio site<br><span>Design sites</span> </h1>
-            <nav class="main-nav">
+            <nav id="nav-panel" class="main-nav">
                 <ul>
-                    <li class="bg-orange"> <a href="#">home</a></li>
-                    <li class="bg-yellow"> <a href="#">services</a></li>
-                    <li class="bg-green"> <a href="#">portfolio</a></li>
-                    <li class="bg-purple"> <a href="#">abaout</a></li>
-                    <li class="bg-blue"> <a href="#">contract</a></li>
+                    <li id="nav-home" class="bg-orange"> <a href="#">home</a></li>
+                    <li id="nav-services" class="bg-yellow"> <a href="#">services</a></li>
+                    <li id="nav-portfolio" class="bg-green"> <a href="#">portfolio</a></li>
+                    <li id="nav-abaout" class="bg-purple"> <a href="#">abaout</a></li>
+                    <li id="nav-contract" class="bg-blue"> <a href="#">contacts</a></li>
                 </ul>
             </nav>
        </header>
@@ -48,7 +50,7 @@
             </div>  <!--feature-slider-->
         </section>
         <section class="feature-services main-content">
-             <div class= "header-section bg-yellow">
+             <div id="services-header" class= "header-section bg-yellow">
                      <h2 class="text-uppercase">Services</h2>
                 </div>
                 <div class = "services-content">
@@ -101,7 +103,7 @@
             </section> <!--feature services-->
             
             <section class="feature-portfolio main-content section-portfolio-spacer">
-                <div class= "header-section bg-green">
+                <div id="portfolio-header" class= "header-section bg-green">
                      <h2 class="text-uppercase">Portfolio</h2>
                 </div>
             
@@ -123,7 +125,7 @@
             </section> <!--feature portfolio-->
             
             <section class="main-content column-one-half">
-               <div class= "header-section bg-purple">
+               <div id="abaout-header" class= "header-section bg-purple">
                      <h2 class="text-uppercase">About</h2>
                </div>
                <div>
@@ -148,7 +150,7 @@
             </section> <!--feature about--> 
             
             <section class="main-content  section-contacts-layout">
-               <div class= "header-section bg-blue">
+               <div id="contacts-header"  class= "header-section bg-blue">
                      <h2 class="text">Connect With Us</h2>
                </div>
                <div class="conntact-layout" >
