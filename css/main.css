@@ -1,0 +1,379 @@
+
+body{
+    background-color: #dfdfdf;
+    color: #868686;
+}
+
+
+.main-content{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.main-nav .bg-orange, .main-nav .bg-yellow, .main-nav .bg-purple,
+.main-nav .bg-green, .main-nav .bg-blue, .btn {
+    transition: background-color 0.5s;
+}
+
+
+.text-white { color: #fff; }
+.bg-gray { background-color: #dfdfdf; }
+.bg-orange { background-color: #f26c4e; }
+.main-nav .bg-orange:hover,
+.btn.bg-orange:hover {background-color: #fd8a70;}
+.bg-yellow { background-color: #f2c24d; }
+.main-nav .bg-yellow:hover { background-color: #ffd777;}
+.bg-purple { background-color: #cf6baa; }
+.main-nav .bg-purple:hover { background-color: #e993c9;}
+.bg-green { background-color: #a3d178; }
+.main-nav .bg-green:hover { background-color: #c4eaa0;}
+.bg-dark-green { background-color: #8ebe5f; }
+.bg-blue{ background-color: #78ccd0; }
+.main-nav .bg-blue:hover { background-color: #9de4e7;}
+
+
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration:none;
+    border-radius: 4px;
+}
+
+
+.text-uppercase{
+    text-align: center;
+    position: relative;
+    bottom: 14px;
+    font-size: 28px;
+    text-transform: uppercase;   
+}
+
+
+.text{
+    text-align: center;
+    position: relative;
+    bottom: 14px;
+    font-size: 28px;
+}
+
+
+/* -----------MEIN HEADER--------------*/
+header{
+    text-align: center;
+    width: 100%;
+}
+
+
+h1.main-title{
+    font-size: 48px;
+    line-height: 40px;
+}
+
+
+.main-title span{
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+
+/* -----------MAIN NAVIGATION---------------*/
+.main-nav{
+    background-color: #cdcdcd;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.main-nav ul{
+    list-style: none;
+    padding-left: 10%;
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    left: -4px;
+}
+
+
+.main-nav li {
+    border-left: 4px solid #dfdfdf;
+    float: left;
+    height: 70px;
+    width: 140px;
+    position: relative;
+}
+
+
+.main-nav li a {
+    color: #fff;
+    font-size: 22px;
+    box-sizing: border-box;
+    padding-top: 22px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: absolute;
+	width: 140px;
+    height: 70px;
+}
+
+
+.main-nav li:last-child{
+    border-right: 4px solid #dfdfdf;
+}
+
+
+.main-nav li a:before {
+    content: '';
+    background-color: #f26c4e;
+    border: 3px solid #dfdfdf;
+    border-radius: 50px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -10px;
+    top: 27px;
+}
+
+
+.main-nav li:last-child a:after {
+    content: ' ';
+    background-color: #f26c4e;
+    border: 3px solid #dfdfdf;
+    border-radius: 50px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -10px;
+    top: 27px;
+}
+
+
+/* -----------FEATURE SERVICES--------------*/
+.column-one-third {
+    display: table-cell;
+    width: 30%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+
+.header-section {
+    border: none;
+    height: 50px;
+    border-bottom: 12px solid #dfdfdf;
+    border-top: 6px solid #dfdfdf;
+    display: inline-block;
+    padding: 5px 120px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.header-section.h2{
+    margin: 0px, 35px;
+}
+
+
+/*----------SLIDER---------------*/
+.fature-slider{
+    background-color: #fff;
+    position: relative;
+    height: 370px;
+    margin-top: 8px;
+}
+
+
+.nav-left, .nav-right {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    top: 131px;
+}
+
+
+.nav-left {
+    background: url('../img/slider-left.png') top left no-repeat;
+    left: -25px;
+}
+
+
+.nav-right {
+    background: url('../img/slider-right.png') top left no-repeat;
+    right: -30px;
+}
+
+
+.slider-nav {
+    list-style: none;
+    padding-left: 0px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 10px;
+    margin: 0px;
+}
+
+
+.slider-nav li{
+    background-color: #cdcdcd;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+
+.slider-nav li.active{ background-color: #f26c4e; }
+
+
+.slider-nav li a{
+    position: absolute;
+    width: 10px;
+    height: 10px;	
+}
+
+
+.slide-image{
+    position: absolute;
+    bottom: 0px;
+    right:  43px;
+    bottom: 70px;
+}
+
+
+.slide-text{
+    width: 310px;
+    margin: 40px 0 0 50px;
+    float: left;
+}
+
+
+.slide-text h2 {
+    color: #f26c4e;
+    margin-bottom: 0;
+}
+
+
+/*---------CONTENT-------------*/
+.services-content{
+    width: 100%;
+    padding-left:0%;
+}
+
+
+.btn-one-third {
+    display: table-cell;
+    padding: 10px;
+    width: 20%;
+    box-sizing: border-box;
+    margin-left: 100px;
+}
+
+
+.btn-layout{
+    margin-left: 30px;   
+}
+
+
+.portfolio-content{
+    width: 55%;
+    position: relative;
+    padding-left: 0%;	
+}
+
+
+.image-small-holder{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+
+.column-one-half{
+    position:relative;
+	right: -660px;
+	bottom: 400px;
+}
+
+
+.spacer-portfolio-btn{
+    position: relative;
+    left: 300px;
+    top: 4px;
+}
+
+
+.section-portfolio-spacer{
+    position: relative;
+    top: 40px;
+}
+
+
+.section-contacts-layout{
+    position: relative;
+    bottom: 230px;
+}
+
+
+.conntact-layout{
+    position: relative;
+    left: 100px;
+}
+
+
+.column-space-to-right{
+    position: relative;
+    right: -660px;
+}
+
+
+.column-registration { 
+    display: inline-block;
+    width: 36%;
+    height: 550px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #f26c4e; 
+}
+
+
+.column-registration h2 { color: #fff; }
+
+
+.column-registration input {
+    border: none;
+    padding: 10px;
+    width: 60%;
+    position: relative;
+    left: 70px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+.column-registration .btn {
+    width: 60%;
+    background-color: #f2c24d;
+    margin-bottom: 40px;
+}
+
+
+.section-registration-layout{
+    position:relative;
+    bottom: 540px;
+}
+
+
+.regestry-btn-layout{
+    position:relative;
+    left: 20%;
+}
+
