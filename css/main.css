@@ -242,9 +242,11 @@ h1.main-title{
 
 .slide-image{
     position: absolute;
-    bottom: 0px;
     right:  43px;
-    bottom: 70px;
+    bottom: 55px;
+    height:276px;
+    width: 588px;
+    background-size: cover;
 }
 
 

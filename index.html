@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang = "en" >
+<html lang = "en" ng-app="site" >
     <head>
         <title>Portfolio site</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <script type="text/javascript" src ="js/angular/angular.js"></script>
+		<script type="text/javascript" src ="js/angular/angular-animate.min.js"></script>
+		<script type="text/javascript" src ="js/angular/angular-touch.min.js"></script>
 		<script type="text/javascript" src ="js/scripts.js"></script>
         <!--[if lt IE 9]>
              <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
-    <body ng-app ng-controller='NavController'>
-    <section class="main-content">
+    <body ng-app>
+    <section class="main-content" ng-controller='NavController'>
        <header>
             <h1 class = "main-title"> Portfolio site<br><span>Design sites</span> </h1>
             <nav id='nav-panel' class="main-nav">
@@ -22,15 +24,12 @@
             </nav>
        </header>
        
-       <section class="main-content">
+       <section class="main-content" ng-controller="SliderController" >
             <div class="fature-slider">
-                   <a href="#" class="nav-left"></a>
-                   <a href="#" class="nav-right"></a>
+                   <a href="#" class="nav-left"   ng-click="prevSlide()"></a>
+                   <a href="#" class="nav-right"  ng-click="nextSlide()"></a>
                    <ul class="slider-nav">
-                       <li class="active"><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
+                       <li  ng-repeat="image in images" ng-style="slide-image" ng-class="{'active':isCurrentSlideIndex( $index )}"><a href="#"></a></li>
                    </ul>
                 <div class="slide">
                      <div class="slide-text">
@@ -41,7 +40,10 @@
                              which the end-users can access through the internet with the help of a web browser.</p>                             
                         <a class="btn bg-orange" href="#"> Click here to Learn More </a>  
                      </div> <!--slide-text--> 
-                     <img class="slide-image" alt="Web Design Services" src="img/portfolio.jpg">
+                     <div ng-repeat="image in images" ng-show="isCurrentSlideIndex( $index )" >
+                          <img class="slide-image"  ng-swipe-right="prevSlide()" ng-swipe-left="nextSlide()" ng-src = {{image.source}} />
+                     </div>
+					  
                 </div> <!--slide-->                 
             </div>  <!--feature-slider-->
         </section>
